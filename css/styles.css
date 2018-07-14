@@ -1,0 +1,14 @@
+:root {
+	--penguin-size: 300px;
+	--penguin-belly: white;
+	--penguin-skin: black;
+}
+
+.penguin {
+	position: relative;
+	display: block;
+	margin: auto;
+	margin-top: 5%;
+	width: var(--penguin-size, 300px);
+	height: var(--penguin-size, 300px);
+}
