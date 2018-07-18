@@ -128,22 +128,51 @@
 }
 .right-hand {
 	top: -30%;
-	left: -27%;
+	left: -19%;
 	background: var(--penguin-skin, black);
 	width: 25%;
 	height: 70%;
-	border-radius: 60% 60% 50% 50%;
+	border-radius: 50% 50% 60% 60%;
 	transform: rotate(300deg);
+	animation-duration: 3s;
+	animation-name: waving;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 }
 
 .left-feet{
-	top: 75%;
-	left: 15%;
+	top: 87%;
+	left: 8%;
 	background-color: orange;
-	width: 25%;
-	height: 10%;
+	width: 40%;
+	height: 19%;
 	border-radius: 50%;
-	transform: skewY(-18deg);
+	transform: skewY(-15deg);
+	z-index: -10;
+	box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+
+.right-feet {
+	top: 87%;
+	left: 50%;
+	background-color: orange;
+	width: 40%;
+	height: 19%;
+	border-radius: 50%;
+	transform: skewY(18deg);
+	z-index: -10;
+	box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+
+@keyframes waving {
+	0% {
+		top: -30%;
+		transform: rotate(300deg);
+	}
+	 100% {
+		top: -12%;
+		transform: rotate(250deg);
+	}
 }
 .penguin * {
 	position: absolute;
