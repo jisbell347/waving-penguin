@@ -1,5 +1,17 @@
+body {
+	background-image: url("../igloo.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+h1 {
+	text-align: center;
+	color: ghostwhite;
+	text-transform: uppercase;
+	text-shadow: 0 5px 5px rgba(0,0,0,0.8);
+}
 :root {
-	--penguin-size: 300px;
 	--penguin-belly: white;
 	--penguin-skin: black;
 	--penguin-beak: orange;
@@ -7,11 +19,23 @@
 
 .penguin {
 	position: relative;
-	display: block;
+	top: 5%;
+	left: 40%;
+	display: inline-block;
 	margin: auto;
 	margin-top: 5%;
-	width: var(--penguin-size, 300px);
-	height: var(--penguin-size, 300px);
+	width: 300px;
+	height: 300px;
+ }
+.penguin2 {
+	position: relative;
+	top: 5%;
+	left: 10%;
+	display: inline-block;
+	margin: auto;
+	margin-top: 5%;
+	width:  200px;
+	height: 200px;
 }
 
 .penguin-bottom {
@@ -23,6 +47,10 @@
 	height: 45%;
 }
 
+.penguin-bottom2 {
+	background-color: #e1e9f0;
+}
+
 .penguin-top {
 	top: 10%;
 	left: 25%;
@@ -30,6 +58,10 @@
 	width: 50%;
 	height: 45%;
 	border-radius: 70% 70% 60% 60%;
+}
+
+.penguin-top2 {
+	background: #e1e9f0;
 }
 
 .belly {
@@ -126,6 +158,9 @@
 	border-radius: 60% 60% 50% 50%;
 	transform: rotate(-45deg);
 }
+.left-hand2 {
+	background-color: #e1e9f0;
+}
 .right-hand {
 	top: -30%;
 	left: -19%;
@@ -134,10 +169,14 @@
 	height: 70%;
 	border-radius: 50% 50% 60% 60%;
 	transform: rotate(300deg);
-	animation-duration: 3s;
+	animation-duration: 2s;
 	animation-name: waving;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
+}
+.right-hand2 {
+	background-color: #e1e9f0;
+	animation-duration: 1.5s;
 }
 
 .left-feet{
@@ -175,5 +214,8 @@
 	}
 }
 .penguin * {
+	position: absolute;
+}
+.penguin2 * {
 	position: absolute;
 }
